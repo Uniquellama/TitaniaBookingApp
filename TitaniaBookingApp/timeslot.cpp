@@ -4,8 +4,8 @@
 //Constructors
 
 /**
-    Default constructor
-*/
+ * @brief TimeSlot::TimeSlot Default constructor is an empty timeslot
+ */
 TimeSlot::TimeSlot() {
     taken = 0;
     time = 0;

@@ -1,8 +1,9 @@
 #include "employee.h"
 
 /**
-    @param string new_name: The name of the employee to be retrieved for display.
-*/
+ * @brief Employee::Employee Object represents user intending to make a booking
+ * @param new_name
+ */
 Employee::Employee(std::string new_name) {
     name = new_name;
 }

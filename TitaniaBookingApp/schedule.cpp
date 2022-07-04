@@ -9,9 +9,9 @@ Schedule::Schedule() {
 // Methods
 
 /**
-    Create calendar with rows representing the days of the week, columns representing hours of the day, initialising all slots as untaken.
+ * @brief Schedule::fill_calendar     Create calendar with rows representing the days of the week, columns representing hours of the day, initialising all slots as untaken.
     Iterate through each day and set time and day of slot.
-*/
+ */
 void Schedule::fill_calendar() {
 
     int rows = Schedule::getDays();
@@ -25,21 +25,6 @@ void Schedule::fill_calendar() {
         }
     }
 }
-
-bool Schedule::unreserve(TimeSlot slot) {
-    if (slot.isTaken()) {
-        slot.setTaken();
-        slot.setName("N/A");
-        return 1;
-    }
-    else {
-        std::cout << "Slot already free";
-        return 0;
-    }
-}
-
-
-
 // Setters
 
 // Getters

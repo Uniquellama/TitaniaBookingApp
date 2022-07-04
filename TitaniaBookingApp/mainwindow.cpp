@@ -42,7 +42,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
+/**
+ * @brief MainWindow::on_listView_doubleClicked Opens a calendar of the device when double-clicked
+ * @param index
+ */
 void MainWindow::on_listView_doubleClicked(const QModelIndex &index)
 {
     schedulewindow scheduleWindow;

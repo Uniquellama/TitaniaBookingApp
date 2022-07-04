@@ -17,9 +17,6 @@ public:
     // Methods
     void fill_calendar();
 
-
-    bool unreserve(TimeSlot slot);
-
     // Setters
 
     // Getters
